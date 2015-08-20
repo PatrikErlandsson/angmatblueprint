@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+}
+
+md-list-item {
+    text-align: center;
+}
+
+html {
+   
+}
+
+#wrapper {
+    background-color: #fff;
+}
+
+.cat-title {
+    text-align: center;
+    color: #111229;
+}
+
+md-sidenav {
+    /*background-color: #f50156;*/
+}
+
+md-list-item:hover {
+    background-color:aqua;
+}
+
+/*
+@media screen AND (min-width: 1400px){
+    body {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+

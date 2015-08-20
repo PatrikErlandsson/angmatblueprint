@@ -1,0 +1,63 @@
+<html lang="en" ng-app="StarterApp">
+<head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="initial-scale=1"/>
+    <meta charset="utf-8">
+</head>
+<body layout="column" ng-controller="homeCtrl" layout="column">
+    <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span>Football App</span>
+      <!-- fill up the space between left and right area -->
+        
+      <span flex></span>
+        
+      <md-button class="md-button" ng-click="toggleSidenav()" hide-gt-sm>Menu</md-button>
+    </div>
+  </md-toolbar>
+    
+    
+
+    <div layout="row" id="wrapper" flex>
+        <md-sidenav layout="column" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-sidenav-left md-whiteframe-z4">
+            <md-list id="sideMenu">
+                <md-list-item class="md-5-line">
+                   <h1><a href="#/" ng-click="toggleSidenav()">Home</a></h1>
+                </md-list-item>
+                <hr>
+                <md-list-item class="md-5-line">
+                   <h1><a href="#/daily" ng-click="toggleSidenav()">Daily goals</a></h1>
+                </md-list-item>
+                <hr>
+                <md-list-item class="md-5-line">
+                   <h1><a href="#/profile" ng-click="toggleSidenav()">Profile</a></h1>
+                </md-list-item>
+                <hr>
+            </md-list>
+        </md-sidenav>
+        
+        
+        
+        <div ng-view flex="50" flex-sm="100" md-swipe-right="onSwipeRight()"></div>
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+    <script src="script/angular-route.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
